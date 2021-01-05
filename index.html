@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>www.google.com</title>
+    <style>
+
+        header {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            line-height: 24px;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.87);
+        }
+        .menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: flex-end;  
+        }
+
+        .appg {
+            margin: auto;
+            color: #5f6368;
+            opacity: 1;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+        }
+        .menu a{
+            display: block;
+            padding-right: 15px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        .gb_head,
+        .ib_head {
+            color: #5f6368;
+        }
+
+        .appgl{
+           max-width: 25px;
+           text-align: center;
+        }
+
+        .connex{
+            margin: -0.1px auto;
+            padding: 2px 2px;
+            border: 1px solid   #2C7EEA;
+            border-radius: 4px;
+            line-height: 18px;
+            color: #ffffff;
+            background-color: #2C7EEA;
+            text-align: center;
+            font-weight: 25px;
+            transition: all 200ms ease-in-out;
+        }
+
+        .connex:hover {
+            color: #2C7EEA;
+            background-color: white;
+            border: none; 
+        }
+
+        #principal {
+            display: flex;
+            justify-content: center;
+        }
+
+        .pmain {
+            display: block;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .googlelogo {
+            padding-top: 104px;
+        }
+
+        .searchbar {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            height: 118px;
+            margin-top: 45px;
+        }
+
+
+        .logloupe,
+        .logmic {
+            width: 20px;
+            padding: 10px 10px;
+            margin: 0 auto;
+        }
+
+        .form-google {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            max-width: max-content;
+        }
+
+        .centerbuttons {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-items: space-between;
+            padding-top: 25px;
+            
+
+        }
+
+        .rechercher,
+        .vers-doodle{
+        display: flex ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 14px;
+        margin: 11px 4px;
+        padding: 0px 15px ;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header"
+        id="navbar">
+        <div class="menu">
+            <div class="head-menu">
+                <ul class="menu-head">
+                    <li>
+                        <a class="gb_head" href="https://mail.google.com/mail/u/0/?tab=wm&ogbl" target="_top" title="Courrier">
+                            Gmail</a>
+                    </li>
+                    <li>
+                        <a class="ib_head" href="https://www.google.be/imghp?hl=fr&tab=wi&ogbl" target="_top" title="Images">
+                            Images
+                        </a>
+                    </li>
+                    <li class="appg">
+                        <a class="log-apps" href="https://about.google/intl/fr/products/?tab=ih" title="Applications Google"
+                            role="button">
+                            <img class="appgl" src="https://icon-library.net/images/google-menu-icon/google-menu-icon-2.jpg"
+                                alt="Applications Google">
+                        </a>
+                    </li>
+                    <li class="gconnex">
+                        <a class="connex" href="https://myaccount.google.com/" alt="Connexion Compte" target="_top"
+                            role="button">
+                            Connexion</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content" 
+        id="principal">
+        <span id="body"> 
+        <p class="pmain">
+            <img class="googlelogo" 
+            src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
+            alt="Logo de Google">
+        </p>
+            <div class="searchbar">
+                <form action=" " method="dialog" class="searchbox">
+                    <div class="form-google">
+                        <label for="loupe">
+                            <img class="logloupe"
+                                src="https://cdn.pixabay.com/photo/2017/01/13/01/22/magnifying-glass-1976105_960_720.png"
+                                alt="Loupe">
+                        </label>
+                        <input type="text">
+                        <label for="mic">
+                            <img class="logmic" 
+                                src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Google_mic.svg"
+                                alt="Utiliser la recherche vocale" 
+                                title="Utiliser la recherche vocale" role="button">
+                        </label>
+                    </div>
+                    <div class="centerbuttons">
+                        <label for="Recherche">
+                            <button class="rechercher"
+                            type="submit"
+                            >
+                            Recherche Google   
+                            </button>
+                        </label>
+                        <label for="Chance">
+                            <button 
+                            class="vers-doodle"
+                            type="submit"
+                            >
+                            <a 
+                            href="https://www.google.com/doodles/">
+                            J'ai de la chance
+                            </a>
+                            </button>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        <p class="amain">
+
+        </p>
+        </span>
+    </div>
+</body>
+</html>
